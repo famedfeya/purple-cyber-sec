@@ -1,0 +1,23 @@
+baseurl = "https://famedfeya.github.io"
+title = "Purple Cyber Sec"
+author = "Feisty One"
+copyright = "Copyright © 2020, all rights reserved."
+canonifyurls = true
+paginate = 3
+theme = "silhouette-hugo"
+
+pygmentsUseClasses=true
+
+#disqusShortname = ""
+#googleAnalytics = ""
+
+[params]
+author = "Feisty One"
+introDescription = "I'm a budding Cyber Security Threat Hunter with vast Networking experience. Interested in both offensive and defensive security. Walk with me in this random journey of discovery"
+contentSharing = "I'm happy for you to share content on this site, but please provide attribution."
+
+[social]
+#instagram = ""
+#linkedin = ""
+twitter = "feisTTY0x1"
+github = "famedfeya"

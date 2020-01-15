@@ -1,0 +1,4 @@
+[submodule "public"]
+	path = public
+	url = https://github.com/famedfeya/famedfeya.github.io.git
+	branch = master
