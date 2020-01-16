@@ -2,7 +2,12 @@
 title: "New Year, New Things"
 date: 2020-01-02T00:31:45+01:00
 draft: false
-
+categories:
+  - Career
+  - LifeStyle
+tags:
+  - Career
+  - Threat Hunting
 ---
 
 With a brand New Year, comes new possibilities. Am super happy to be transitioning to the role of a Threat Hunter at a great company in Feb. Am happy with the path my career has taken so far:
