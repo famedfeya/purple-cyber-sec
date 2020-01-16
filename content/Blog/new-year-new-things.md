@@ -3,7 +3,7 @@ title: "New Year, New Things"
 date: 2020-01-02T00:31:45+01:00
 draft: false
 categories:
-  - Career
+  - Blog
   - LifeStyle
 tags:
   - Career
