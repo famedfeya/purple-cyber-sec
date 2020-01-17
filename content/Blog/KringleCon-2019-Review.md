@@ -1,6 +1,6 @@
----
-title: "KringleCon 2019 Review"
-date: 2020-01-17T22:26:06+01:00
++++
+title= "KringleCon 2019 Review"
+date= 2020-01-17T22:26:06+01:00
 tags = [
     "CTF",
     "Reviews",
@@ -10,6 +10,8 @@ categories = [
     "LifeStyle",
 ]
 menu = "main"
-draft: true
+draft= false
++++
 ---
 
+Stay tuned ..
