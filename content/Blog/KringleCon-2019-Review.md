@@ -4,7 +4,7 @@ date= 2020-01-17T22:26:06+01:00
 tags = [
     "CTF",
     "Reviews",
-    "Write Ups",
+    "CTF Write Ups",
 ]
 categories = [
     "LifeStyle",

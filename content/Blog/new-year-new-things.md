@@ -4,7 +4,6 @@ date: 2020-01-02T00:31:45+01:00
 draft: false
 categories:
   - Blog
-  - LifeStyle
 tags:
   - Career
   - Threat Hunting
