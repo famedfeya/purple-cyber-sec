@@ -1,23 +1,23 @@
 baseurl = "https://feisty.one/"
 title = "Purple Cyber Sec"
-author = "Faith Opiyo"
-copyright = "Copyright © 2020, all rights reserved."
+author = "Faith O."
+copyright = "Copyright © 2020, All rights reserved."
 canonifyurls = true
 paginate = 3
 theme = "silhouette-hugo"
 
 pygmentsUseClasses=true
 
-#disqusShortname = ""
+disqusShortname = "disqus_N6rHQMk6IN"
 #googleAnalytics = ""
 
 [params]
-author = "Faith Opiyo"
-introDescription = "I'm a budding Cyber Security Threat Hunter with vast Networking experience. Interested in both offensive and defensive security. Walk with me in this random journey of discovery"
+author = "Faith O."
+introDescription = "I'm a Cyber Security Threat Hunter with vast Networking experience. Interested in both offensive and defensive security. Walk with me in this random journey of discovery"
 contentSharing = "I'm happy for you to share content on this site, but please provide attribution."
 
 [social]
 #instagram = ""
-linkedin = "fmopiyo"
+#linkedin = ""
 twitter = "feisTTY0x1"
 github = "famedfeya"
