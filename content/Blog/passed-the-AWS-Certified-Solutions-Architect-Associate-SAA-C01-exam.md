@@ -3,7 +3,7 @@ title: "Passed the AWS Certified Solutions Architect Associate SAA-C01 Exam"
 date: 2020-01-25T00:17:08+01:00
 draft: false
 categories:
-  - Lifestyle
+  - Blog
 tags:
   - Certifications
 ---
