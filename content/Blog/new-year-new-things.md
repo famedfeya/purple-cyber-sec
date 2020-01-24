@@ -7,7 +7,6 @@ categories:
 tags:
   - Career
   - Threat Hunting
-weight: 10
 ---
 
 With a brand New Year, comes new possibilities. Am super happy to be transitioning to the role of a Threat Hunter at a great company in Feb. Am happy with the path my career has taken so far:
