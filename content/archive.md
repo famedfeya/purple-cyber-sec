@@ -1,8 +1,39 @@
 ---
 title: "Archive"
 date: 2020-01-18T21:12:47+01:00
-type: archive
 draft: false
 ---
 
-This is a placeholder for my Archive page.
+
+<div id="main">
+  <div id="content">
+    <div>
+      <article role="article">
+        <header>
+          <h1 class="entry-title">
+            {{ .Title }}  <!-- title, in this case it will be "Archive page" -->
+          </h1>
+        </header>
+        <div id="blog-archives" class="category">
+          {{ .Content }} <!-- content of the markdown file. note that inside the range .Content will point to each page's content -->
+          {{ range (where .Site.Pages "Type" "post") }}
+          <h2>
+            {{ .Date | dateFormat "2006"}} <!-- print publish year -->
+          </h2>
+          <article>
+            <h1>
+              <a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a>
+            </h1>
+            <time>
+              <span class="month">{{ .Date | dateFormat "Jan" }}</span> <!-- print publish month -->
+              <span class="day">{{ .Date | dateFormat "2" }}</span> <!-- print publish day -->
+            </time>
+              <!-- if you want pages summary you can print it here {{ .Summary }} -->
+          </article>
+          {{ end }}
+        </div>
+      </article>
+    </div>
+    {{ partial "sidebar.html" . }}
+  </div>
+</div>
