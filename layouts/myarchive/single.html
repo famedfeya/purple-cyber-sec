@@ -1,17 +1,30 @@
-<style>
-table.allposts, td.allposts-date, td.allposts-title {
-  border:none;
-}
+{{ define "head" }}
+    {{ partial "head-meta" . }}
 
-td.allposts-date {
-    padding: 0 10px 0 0;
-}
-
-td.allposts-title {
-    font-size: 110%;
-}
-</style>
-
+    {{ with .Param "featureImage" }}
+    <style>
+    table.allposts, td.allposts-date, td.allposts-title {
+      border:none;
+    }
+    
+    td.allposts-date {
+        padding: 0 10px 0 0;
+    }
+    
+    td.allposts-title {
+        font-size: 110%;
+    }
+    </style>
+    {{ end }}
+{{ end }}
+{{ define "title" }}
+  {{ .Title }} | {{ .Site.Title }}
+{{ end }}
+{{ define "header" }}
+<header class="feature-image d-print-none">
+</header>
+{{ end }}
+{{ define "main" }}
 <div id="main">
   <div id="content">
     <div>
@@ -32,3 +45,5 @@ td.allposts-title {
     {{ partial "sidebar.html" . }}
   </div>
 </div>
+{{ partial "sidebar" . }}
+{{ end }}
