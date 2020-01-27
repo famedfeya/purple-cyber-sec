@@ -15,6 +15,8 @@ disqusShortname = "disqus_N6rHQMk6IN"
 author = "Faith O."
 introDescription = "I'm a Cyber Security Threat Hunter with vast Networking experience. Interested in both offensive and defensive security. Walk with me in this random journey of discovery"
 contentSharing = "I'm happy for you to share content on this site, but please provide attribution."
+# Set to true to hide ReadingTime on posts
+disableReadingTime = false
 
 [social]
 #instagram = ""
