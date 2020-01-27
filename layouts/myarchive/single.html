@@ -1,19 +1,43 @@
+
+
 {{ define "head" }}
     {{ partial "head-meta" . }}
 
     {{ with .Param "featureImage" }}
-    <style>
-    table.allposts, td.allposts-date, td.allposts-title {
-      border:none;
-    }
-    
-    td.allposts-date {
-        padding: 0 10px 0 0;
-    }
-    
-    td.allposts-title {
-        font-size: 110%;
-    }
+    <style type="text/css">
+        .feature-image {
+            background-image: url("{{ . | absURL | safeCSS}}");
+            height: 500px;
+        }
+
+        @media (max-width: 992px) {
+            .feature-image {
+                height: 350px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .feature-image {
+                height: 250px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .feature-image {
+                height: 200px;
+            }
+        }
+        table.allposts, td.allposts-date, td.allposts-title {
+          border:none;
+        }
+        
+        td.allposts-date {
+            padding: 0 10px 0 0;
+        }
+        
+        td.allposts-title {
+            font-size: 110%;
+        }
     </style>
     {{ end }}
 {{ end }}
@@ -25,25 +49,23 @@
 </header>
 {{ end }}
 {{ define "main" }}
-<div id="main">
-  <div id="content">
-    <div>
-      <article role="article">
-          {{ .Content }} <!-- content of the markdown file. note that inside the range .Content will point to each page's content -->
-          <table class="allposts">
-          {{ range (where .Site.Pages "Type" "post") }}
-            {{ if .IsPage }}
-              <tr>
-                <td class="allposts-date"><strong>{{ .Date | dateFormat "2006"}} {{ .Date | dateFormat "Jan" }} {{ .Date | dateFormat "2" }}</strong></td>
-                <td class="allposts-title"><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></td>
-              </tr>
-            {{ end }}
-          {{ end }}
-          </table>
-      </article>
+<div class="container mt-4 post">
+    <h1>{{ .Title }}</h1>
+    {{ partial "post-meta" . }}
+
+    <div class="share-icons d-flex justify-content-center d-print-none">
+        {{ partial "share-icons" . }}
     </div>
-    {{ partial "sidebar.html" . }}
-  </div>
+
+    <div class="mt-4 mb-4 main-content">
+        {{ .Content }}
+
+        <div class="share-icons d-flex justify-content-center d-print-none">
+            {{ partial "share-icons" . }}
+        </div>
+    </div>
+
+    {{ template "_internal/disqus.html" . }}
 </div>
 {{ partial "sidebar" . }}
 {{ end }}
